@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d8e9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e9f3f8;
+    border: 2px solid #8fd3f4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.header h1 {
+    background-color: #4da6ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    margin: 10px 0;
+    color: #00a2e8;
+    font-size: 1.2em;
+}
+.content  {
+    margin: auto;
+    
+}
+
+.fixed-shapes, .targets, .draggable-shapes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.shape, .target {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.fixed-shapes .shape {
+    background-color: #4da6ff;
+}
+
+#square {
+    background-color: #4da6ff;
+}
+
+#circle {
+    background-color: #4da6ff;
+    border-radius: 50%;
+}
+
+#pentagon {
+    background-color: #4da6ff;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+#triangle {
+    background-color: #4da6ff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.draggable-shapes .shape {
+    background-color: #4da6ff;
+    cursor: pointer;
+}
+
+#shape-square {
+    background-color: #4da6ff;
+    shape-outside: rect(0,0,50px,50px);
+}
+
+#shape-circle {
+    background-color: #4da6ff;
+    border-radius: 50%;
+}
+
+#shape-pentagon {
+    background-color: #4da6ff;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+#shape-triangle {
+    background-color: #4da6ff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4da6ff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #008bb5;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

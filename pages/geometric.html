@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Game</title>
+    <link rel="stylesheet" href="../style/geometric.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JOGO GEOMÉTRICO</h1>
+        </div>
+        <div class="content">
+            <h2>COLOQUE AS FORMAS NA ORDEM CORRETA</h2>
+            
+            <!-- Fixed shapes at the top -->
+            <div class="fixed-shapes">
+                <div class="shape" id="square"></div>
+                <div class="shape" id="circle"></div>
+                <div class="shape" id="pentagon"></div>
+                <div class="shape" id="triangle"></div>
+            </div>
+            
+            <!-- Target areas -->
+            <div class="targets">
+                <div class="target" data-shape="square"></div>
+                <div class="target" data-shape="circle"></div>
+                <div class="target" data-shape="pentagon"></div>
+                <div class="target" data-shape="triangle"></div>
+            </div>
+            
+            <!-- Draggable shapes at the bottom -->
+            <div class="draggable-shapes">
+                <div class="shape" draggable="true" id="shape-circle"></div>
+                <div class="shape" draggable="true" id="shape-pentagon"></div>
+                <div class="shape" draggable="true" id="shape-triangle"></div>
+                <div class="shape" draggable="true" id="shape-square"></div>                
+            </div>
+
+           
+        </div>
+        <div class="footer">
+            <button id="back-button" onclick="goBack()">Voltar</button>
+        </div>
+    </div>
+    <script src="../scripts/geometric.js"></script>
+</body>
+</html>
